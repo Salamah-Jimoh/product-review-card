@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&family=Outfit&display=swap');
+
+body{
+    font-size: 14px;
+    font-weight: 700;
+}
+.hide{
+    display: none;
+}
+.flex-container{
+ margin:100px;
+display:flex;
+align-items:center;
+justify-content: center;
+width:80%;
+
+}
+.desktop-img{
+  display:block;
+}
+.show{
+    max-width:100%;
+    height:auto;
+}
+.product-info{
+    background-color:  hsl(0, 0%, 100%);
+  height: 666px;
+}
+.first-text{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15px;
+    letter-spacing: 5px;
+    line-height:1 ;
+    color:  hsl(228, 12%, 48%);
+}
+.more-info{
+    margin:10px;
+    padding:15px;
+}
+.big-text{
+    font-family: 'Fraunces', serif;
+    margin-bottom:30px;
+    font-size:35px;
+    line-height: .9;
+}
+.small-text{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:30px;
+    color:  hsl(228, 12%, 48%);
+}
+.price {
+display:flex;
+margin-bottom:30px;
+}
+.big-price{
+    font-size:30px;
+    color:hsl(158, 36%, 37%);
+    margin-right:5px;
+}
+.small-price{
+    color:  hsl(228, 12%, 48%); 
+    position: relative;
+    top:15px;
+   
+}
+.button{
+ border:none;   
+outline:none;
+color:hsl(0, 0%, 100%);
+font-size:1.25rem;
+padding-top:0.5rem;
+padding-bottom:1rem;
+width:100%;
+background-color:hsl(158, 36%, 37%);
+}
+.button:hover{
+    background-color:hsl(158, 36%, 20%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media (max-width:  375px){
+   .flex-container{
+      display:block;
+      margin:20px auto;
+    }
+    .hide{
+        display:block;
+        max-width: 100%;
+        height: auto;
+    }
+    .show{
+        display:none;
+    }
+    .big-text{
+        font-size:30px;
+    }
+    .product-info{
+        /*height:900px;*/
+        margin-top:0px;
+        height:600px;
+        border:1px solid white;
+    }
+}
